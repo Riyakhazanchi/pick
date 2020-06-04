@@ -1,0 +1,65 @@
+<html>
+
+<head>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="C:\Users\Mohan Singh Kataria\Desktop\Chetali\PickupPoint\Frontend\css\signupstyle.css" rel="stylesheet">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body background="https://www.xmple.com/wallpaper/linear-green-gradient-white-1920x1080-c2-f5fffa-20b2aa-a-270-f-14.svg">
+    <div class="container">
+    <div class="row" align="center">
+		<img src="https://pluspng.com/img-png/amazon-logo-vector-png-amazon-logo-vector-512.png" alt="amazon logo" style="width:120px;height:100px;">
+        <strong> <h7 style="color:black;">Pick-up Point Services</h7> </strong>
+	</div>
+		<div class="row">
+			<div class="panel panel-primary">
+				<div class="panel-body">
+					<form method="POST" action="/admin" role="form">
+						{% csrf_token %}
+						<div class="form-group">
+							<h2>Sign Up</h2>
+						</div>
+						<div class="form-group">
+							<strong>Your Name </strong>
+							<input id="Name" type="text" maxlength="50"  name="Name"   class="form-control">
+						</div>
+            
+            <div class="form-group">
+							<strong>Mobile Number </strong>
+							<input id="Number" type="text" maxlength="50"  name="Number"   class="form-control">
+						</div>
+            
+            <div class="form-group">
+							<strong>Email </strong>
+							<input id="signinEmail" type="email" maxlength="50" name="signinEmail" class="form-control">
+						</div>
+						<div class="form-group">
+							<strong>Password</strong>
+							<span class="right"><a href="">(At least 6 characters)</a></span>
+							<input id="signinPassword" type="password"name="signinPassword" maxlength="25" class="form-control">
+						</div>
+            
+            <div class="form-group">
+							<strong>Confirm Password</strong>
+<!-- 							<span class="right"><a href="">(At least 6 characters)</a></span> -->
+							<input id="signinPassword" type="password" maxlength="25" class="form-control">
+						</div>
+						<div class="form-group" style="padding-top: 12px;">
+							<button id="signinSubmit" type="submit" class="btn btn-success btn-block">Sign up</button>
+						</div>
+						<div class="form-group divider">
+							<!-- <hr class="left"><small>Already have an account ?</small><hr class="right"> -->
+							<small>Already have an account ?</small>
+						</div>
+						<p class="form-group"><a href="#" class="btn btn-info btn-block">Login </a></p>
+						<p class="form-group">By signing in you are agreeing to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>.</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
